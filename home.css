@@ -1,0 +1,708 @@
+@font-face {
+    font-family: 'Arboria Bold';
+    src:  url('Arboria-Bold.ttf') format('woff2')
+  }
+  
+  @font-face {
+    font-family: 'Arboria-Thin';
+    src:  url('Arboria-Book.woff2') format('woff2')
+  }
+  
+  
+html {
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100%;
+    height: 12vh;
+    font-family: 'Arboria Bold';
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    padding: 3vh 0 0 6vh;
+    
+}
+
+header img.logo{
+    width: 70px;
+}
+
+nav.menu-horizontal{
+      width: 61.5%;
+      margin-right: 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  nav.menu-horizontal a{
+      font-size: 1.2rem;
+      font-family: 'Arboria Bold';
+      text-decoration: none;
+      color: #0d0d0d;
+    }
+    nav.menu-horizontal a:nth-child(3){
+        color: #F9B233;
+    }
+    
+    .menu-horizontal-container a:hover{
+        color: #F9B233;
+    } 
+    .menu-horizontal-container a:active{
+        text-decoration: underline; 
+    }
+    
+    .menu-vertical{
+    padding-top: 5.5vh;
+        display: flex;
+    flex-direction: column;
+    width: 6%;
+    height: 100vh;
+    background-color: #F9B233;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    position: absolute;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+section.banner{
+    width: 95%;
+    height:72vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1%;
+}
+
+article.frase-banner{
+    width: 55%;
+    height: auto;
+    margin-right: 5%;
+    padding: 12% 0 0 8%;
+    position: absolute;
+    z-index: 1;
+}
+article.frase-banner p{
+    color: #F9B233;
+    font-family: 'Arboria Bold';
+    font-size: 3.8vw;
+    line-height:4.6vw;
+}
+
+section.banner article.frase-banner{
+    
+}
+
+section.banner img.foto-banner{
+    width: 60%;
+    max-width: 740px;
+    position: absolute;
+    right: 6%;
+}
+section.banner img.foto-banner-mobile{
+    display: none;
+}
+
+section.seta-chamada-programacao{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin: 2% 0 8% 0;
+}
+
+main{
+    width: 80%;
+    margin: 0 10%;
+    height: auto;
+    
+}
+
+main article.programacao-texto-chamada{
+    width: 82%;
+    margin: 0 auto;
+    padding-top: 5%;
+    text-align: center;
+}
+
+main article.programacao-texto-chamada p{
+    font-family: 'Arboria-Thin';
+    color: #DC3C34;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+}
+
+main h2.titulo-ballrom-nas-redes{
+    color: #DC3C34;
+    font-family: 'Arboria Bold';
+    font-size: 2.5rem;
+    margin: 10% 0;
+}
+
+.container-programacao{
+    margin: 8% 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    
+    justify-content: space-between;
+    font-family: 'Arboria-Thin';
+}
+.container-programacao-reverse {
+    margin: 8% 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    flex-direction: row;
+    font-family: 'Arboria-Thin';
+}
+
+.container-programacao-reverse.mobile{
+    display: none;
+}
+
+.container-programacao .resumo-programacao{
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+}
+
+.container-programacao-reverse .resumo-programacao{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.resumo-programacao{
+    display: flex;
+    flex-direction: row;
+}
+
+.container-programacao .resumo-programacao aside{
+    padding-left: 5%;
+}
+
+.resumo-programacao aside{  
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.resumo-programacao aside p{
+    font-family: 'Arboria-Thin';
+    color: #956004;
+    font-size: 1.5rem;
+    line-height: 2vw;
+    
+}
+
+.resumo-programacao aside h3{
+    font-family: 'Arboria-Thin';
+    color: #956004;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 5%;
+}
+
+.img-data-programacao{
+    width: 100%;
+    max-width: 130px;
+}
+
+
+.sinopse-programacao  {
+    /* border: 1px solid blue; */
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: end;
+    bottom: 0;
+    
+}
+
+.img-programacao{
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    
+}
+
+.sinopse-programacao p{
+    color: #666666;
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+}
+
+.sinopse-programacao  button{
+    background-color: #333333;
+    color: #f1f1f1;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 2% 5%;
+    margin-top: 10%;
+}
+
+.mes-img{
+    width: 100%;
+    max-width: 220px;
+}
+
+.mes-marco-box{
+}
+
+.mes-maio-box{
+    display: flex;
+    justify-content: flex-end;
+}
+.mes-abril-box, .mes-junho-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.sidenav {
+    font-family: "Arboria Bold";
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    background-color: #F9B233;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav .itens-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* height: 70%; */
+    width: 60%;
+    margin: 20% auto;
+}
+.sidenav h2{
+    color: #0d0d0d;
+    display: block;
+    font-size: 2.3rem;
+    padding-bottom: 5% ;
+}
+.sidenav a {
+    color: #0d0d0d;
+    
+    padding: 15px 0 15px 0;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    transition: 0.3s;
+    
+}
+
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sidenav .logo-vertical{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+footer{
+    padding: 2% 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer .redes-galeria, footer .realizadores-galeria{
+    display: flex;
+}
+
+footer .redes-galeria{
+    margin-top: 10%;
+    justify-content: space-between;
+
+}
+footer .realizadores-galeria{
+    margin-top: 5%;
+    justify-content: space-around;
+
+}
+footer .redes{
+    width: 20%;
+}
+footer .realizadores{
+    width: 40%;
+}
+footer .realizadores p, footer .redes p{
+    font-family: 'Arboria Bold';
+    font-size: 1.5rem;
+    color: #333333;
+}
+
+footer .realizadores .realizadores-galeria{
+padding-left: 20%;
+}
+footer .realizadores .realizadores-galeria img{
+    max-height: 5vw;
+}
+footer .redes .redes-galeria img{
+    max-height: 2vw;
+}
+
+@media only screen and (max-width: 1280px) { 
+    section.banner img.foto-banner{
+        width: 60%;
+        max-width: 830px;
+        position: absolute;
+        right: 6%;
+    }
+    footer .realizadores p, footer .redes p{
+        font-size: 1.3rem;
+    }
+}
+@media only screen and (max-width: 1041px) {
+    nav.menu-horizontal a{
+        font-size: 1rem;
+    }
+
+    img.img-programacao{
+        max-width: 240px;
+    }
+    .resumo-programacao aside p{
+        font-size: 1.3rem;
+        line-height: 1.3rem;
+    
+    }
+    
+    .resumo-programacao aside h3{
+        font-size: 1.3rem;
+        margin-top: 5%;
+    }
+    
+    .sinopse-programacao p{
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+    
+    .container-programacao-reverse .resumo-programacao{
+        width: 25%;
+    }
+
+    footer .realizadores p, footer .redes p{
+        font-size: 1.2rem;
+    }
+
+  }
+
+  @media only screen and (max-width: 940px) {
+    header {
+        height: 60px;
+        padding: 1% 0 0 2%;
+    }
+    .menu-vertical{
+        padding-top: 2.6%;
+    }
+      nav.menu-horizontal a{
+          font-size: 0.8rem;
+      }
+      main article.programacao-texto-chamada{
+          width: 90%;
+      }
+      main h2.titulo-ballrom-nas-redes {
+        margin: 20% 0;
+    }
+    section.banner{
+        height: 64vh;
+        margin-bottom: 15%;
+    }
+    section.seta-chamada-programacao {
+        margin: 2% 0 15% 0;
+    }
+    img.img-programacao{
+          max-width: 210px;
+      }
+
+      .resumo-programacao aside p{
+        font-size: 1rem;
+        line-height: 1.1rem;
+    
+    }
+    
+    .resumo-programacao aside h3{
+        font-size: 1rem;
+        margin-top: 5%;
+    }
+    
+    .container-programacao .resumo-programacao{
+        width: 60%;
+
+    }
+    .container-programacao-reverse .sinopse-programacao{
+        width: 40%;
+        padding: 0 1%;
+    }
+
+    .sinopse-programacao button{
+        margin-top: 3%;
+    }
+    .sinopse-programacao p{
+        font-size: 0.9rem;
+        line-height: 0.9rem;
+    }
+    footer .realizadores p, footer .redes p{
+        font-size: 1.1rem;
+    }
+  }
+
+  @media only screen and (max-width: 714px) {
+
+  }
+  @media only screen and (max-width: 714px) {
+
+    .container-programacao .resumo-programacao aside {
+        padding: 0 3%;
+    }
+    img.img-programacao{
+        max-width: 210px;
+    }
+
+    .resumo-programacao aside p{
+      font-size: 0.9rem;
+      line-height: 0.9rem;
+  
+  }
+  
+  .resumo-programacao aside h3{
+      font-size: 0.9rem;
+      margin-top: 5%;
+  }
+  .sinopse-programacao button{
+    margin-top: 1%;
+    font-size: 0.7rem;
+}
+.sinopse-programacao p{
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+}
+  }
+
+
+  @media only screen and (max-width: 650px) {
+ nav a, nav span {
+     display: none;
+ }
+    section.banner img.foto-banner{
+        display: none;
+    }
+    section.banner img.foto-banner-mobile{
+        width: 75%;
+        max-width: 405px;
+        position: absolute;
+        right: 0;
+        display: block;
+    }
+    
+
+    .header-box{
+        margin-bottom: 6%;
+        box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+    }
+
+    
+    nav.menu-horizontal{
+        display: block;
+    }
+    /* nav.menu-horizontal a, nav.menu-horizontal span{
+        visibility: hidden;
+    } */
+     nav.menu-horizontal{
+    }
+    header img.logo{
+        width: 50px;
+    }
+    
+    .menu-vertical{
+        padding: 0;
+        width: 12%;
+        height: 45px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    header{
+        height: 45px;
+        padding: 0 0 0 2%;
+        margin-bottom: 20%;
+    }
+    section.banner{
+        margin: 10% 0 20% 0;
+        height:62vh;
+    }
+    
+    section.banner svg{
+        width: 50px;
+        height: auto;
+    }
+    article.frase-banner {
+        width: 79%;
+        padding:16vh 0 0 9%;
+    }
+    article.frase-banner p {
+        font-size: 2rem;
+        line-height: 3.2rem;
+    }
+
+
+    section.seta-chamada-programacao{
+        margin: 0 0 15% 0;
+    }    
+
+    main article.programacao-texto-chamada {
+        /* margin: 15% 0;
+        padding: 5% 0; */
+        width: 95%;
+    }
+    main article.programacao-texto-chamada p {
+        font-size: 1.3rem;
+    }
+   
+    main{
+        width: 90%;
+        margin: 0 5%;
+        height: auto;
+        
+    }
+    img.mes-img {
+        width: 100%;
+        max-width: 160px;
+    }
+    img.img-programacao{
+        max-width: 185px;
+    }
+
+    main h2.titulo-ballrom-nas-redes {
+        font-size: 1.9rem;
+        margin: 17% 0;
+    }
+
+    .resumo-programacao aside p{
+      display: none;
+  
+  }
+  
+  .resumo-programacao aside h3{
+      font-size: 1.2rem;
+      margin-top: 5%;
+  }
+  .sinopse-programacao button{
+    margin-top: 5%;
+    font-size: 0.9rem;
+}
+.sinopse-programacao p{
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+}
+
+.container-programacao{
+    flex-direction: column;
+}
+.container-programacao .resumo-programacao aside{
+    padding: 0 0 0 5%;
+}
+
+.container-programacao .resumo-programacao{
+    width: 100%;
+}
+.container-programacao .sinopse-programacao{
+    margin-top: 10%;
+    width: 100%;
+}
+
+
+.container-programacao, .container-programacao-reverse.mobile{
+    margin: 17% 0 ;
+}
+
+.container-programacao-reverse.web{
+    display: none;
+}
+.container-programacao-reverse.mobile{
+    display: block;
+}
+.container-programacao-reverse .resumo-programacao {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.container-programacao-reverse .resumo-programacao aside{
+    margin-right: 4%;
+}
+.container-programacao-reverse .sinopse-programacao {
+    margin-top: 10%;
+    width: 100%;
+}
+
+
+footer{
+    justify-content: space-between;
+    padding: 2%;
+}
+footer .redes {
+    width: 30%;
+}
+
+footer .realizadores .realizadores-galeria {
+    padding-left: 0;
+}
+
+footer .redes .redes-galeria img {
+    max-height: 4vw;
+}
+
+footer .realizadores .realizadores-galeria img {
+    max-height: 8vw;
+}
+
+footer .realizadores p, footer .redes p{
+    font-size: 1rem;
+}
+}
+
+/* 
+.sidenav .itens-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70%;
+    width: 60%;
+    margin: 40% auto;
+  }
+  
+  
+    .sidenav h2{
+    color: #0d0d0d;
+    display: block;
+    font-size: 2.3rem;
+    padding-bottom: 15% ;
+  }*/
