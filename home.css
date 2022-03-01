@@ -8,7 +8,7 @@
     src:  url('Arboria-Book.woff2') format('woff2')
   }
   
-  
+
 html {
     scroll-behavior: smooth;
 }
@@ -91,10 +91,6 @@ article.frase-banner p{
     font-family: 'Arboria Bold';
     font-size: 3.8vw;
     line-height:4.6vw;
-}
-
-section.banner article.frase-banner{
-    
 }
 
 section.banner img.foto-banner{
@@ -253,9 +249,6 @@ main h2.titulo-ballrom-nas-redes{
 .mes-img{
     width: 100%;
     max-width: 220px;
-}
-
-.mes-marco-box{
 }
 
 .mes-maio-box{
@@ -533,11 +526,7 @@ footer .redes .redes-galeria img{
     nav.menu-horizontal{
         display: block;
     }
-    /* nav.menu-horizontal a, nav.menu-horizontal span{
-        visibility: hidden;
-    } */
-     nav.menu-horizontal{
-    }
+
     header img.logo{
         width: 50px;
     }
