@@ -1,0 +1,349 @@
+@font-face {
+    font-family: 'Arboria Bold';
+    src:  url('Arboria-Bold.ttf') format('woff2')
+}
+
+@font-face {
+    font-family: 'Arboria-Thin';
+    src:  url('Arboria-Book.woff2') format('woff2')
+}
+
+@font-face {
+    font-family: 'Arboria-Medium';
+    src:  url('Arboria-Medium.ttf') format('woff2')
+  }
+  
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+body{
+    margin: 0 auto;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100%;
+    height: 12vh;
+    font-family: 'Arboria Bold';
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    background-color: white;
+    
+}
+
+header img.logo{
+    margin-left: 2%;
+    width: 70px;
+}
+
+nav.menu-horizontal{
+      width: 53%;
+      margin-right: 9%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  nav.menu-horizontal a{
+      font-size: 1.1rem;
+      font-family: 'Arboria Bold';
+      text-decoration: none;
+      color: #0d0d0d;
+    }
+    nav.menu-horizontal a:nth-child(3){
+        color: #F9B233;
+    }
+    
+    .menu-horizontal-container a:hover{
+        color: #F9B233;
+    } 
+    .menu-horizontal-container a:active{
+        text-decoration: underline; 
+    }
+    
+    .menu-vertical{
+    padding-top: 5.5vh;
+        display: flex;
+    flex-direction: column;
+    width: 6%;
+    height: 100vh;
+    background-color: #F9B233;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    position: fixed;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sidenav {
+    font-family: "Arboria Bold";
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 6;
+    top: 0;
+    right: 0;
+    background-color: #F9B233;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav .itens-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* height: 70%; */
+    width: 60%;
+    margin: 20% auto;
+}
+.sidenav h2{
+    color: #0d0d0d;
+    display: block;
+    font-size: 2.3rem;
+    padding-bottom: 5% ;
+}
+.sidenav a {
+    color: #0d0d0d;
+    
+    padding: 15px 0 15px 0;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    transition: 0.3s;
+    
+}
+
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sidenav .logo-vertical{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+main{
+    padding-left: 10%;
+    height:70vh;
+}
+
+h1, p{
+    color: #333333;
+    margin: 0;
+}
+p{
+
+    margin: 2% 0 2% 0;
+    font-family: 'Arboria-Thin';
+}
+h1{
+font-family: 'Arboria Bold';
+font-size: 48px;
+}
+input{
+    width: 44%;
+    padding: 2% 1%;
+    box-sizing:border-box;
+    border-radius: 5px;
+    border: none;
+    background-color: #f1f1f1;
+    font-size: 1rem;
+}
+
+input:first-child{
+    margin-right: 1.5%;
+}
+
+input::placeholder, textarea::placeholder{
+    font-size: 1rem;
+    font-family: 'Arboria-Thin';
+}
+
+input:focus, textarea:focus{
+    outline: none !important;
+    border:1px solid #956004;
+  }
+textarea{
+    width: 90%;
+    height: 10%;
+    border: none;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    margin: 2% 0 4% 0;
+    padding: 2.5% 1%;
+    font-size: 1rem;
+}
+
+form{
+    width: 75%;
+}
+
+button{
+    color: #fff;
+    background-color: #333333;
+    padding: 1% 5%;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+footer{
+    width: 94%;
+    padding: 1% 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    right: 6%;
+    bottom: 0;
+    left: 0;
+    box-shadow:  1px 0  2px 0 rgba(0,0,0,.2);
+
+}
+
+footer .redes-galeria, footer .realizadores-galeria{
+    display: flex;
+
+}
+
+footer .redes-galeria{
+    margin-top: 10%;
+    justify-content: space-between;
+    margin-left: 2%;
+
+}
+footer .realizadores-galeria{
+    justify-content: space-around;
+
+}
+footer .redes{
+    width: 15%;
+}
+footer .realizadores{
+    width: 40%;
+}
+footer .realizadores p, footer .redes p{
+    font-family: 'Arboria Bold';
+    font-weight: 100;
+    font-size: 1.1rem;
+    color: #333333;
+    margin-top: 0;
+}
+
+footer .redes p{
+    margin-bottom: 20%;
+}
+footer .realizadores .realizadores-galeria{
+padding-left: 20%;
+}
+footer .realizadores .realizadores-galeria img{
+    max-height: 4vw;
+}
+footer .redes .redes-galeria img{
+    max-height: 1.6vw;
+}
+
+
+@media only screen and (max-width: 650px) {
+    nav a, nav span {
+        display: none;
+    }
+ 
+    header img.logo{
+        width: 50px;
+        margin-bottom: 2px;
+    margin-left: 2%;
+    }
+    
+    .menu-vertical{
+        padding: 0;
+        width: 12%;
+        height: 45px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    header{
+        z-index: 5;
+        position: fixed;
+        top: 0;
+        height: 45px;
+        box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+    }
+
+    h1{
+        margin:18% 0 3% 0;
+        font-size: 44px
+    }
+
+    p{
+        width: 90%;
+    }
+
+    form{
+        margin-top: 6%;
+        width: 90%;
+    }
+
+    input{
+        width: 95%;
+        margin-bottom: 5%;
+    }
+
+
+    textarea{
+        width: 95%;
+    }
+
+    input, textarea{
+        padding: 6%  ;
+    }
+
+    button{
+        margin-top: 7%;
+        padding: 3% 5%;
+        font-size: 1rem;
+    }
+    
+    footer{
+        width: 100%;
+        bottom: 10px;
+        justify-content: space-between;
+        padding:0 3%;
+        margin-top: 10%;
+    }
+    footer .redes {
+        width: 45%;
+    }
+    
+    footer .realizadores .realizadores-galeria {
+        padding-left: 0;
+    }
+    
+    footer .redes .redes-galeria img {
+        max-height: 4vw;
+    }
+    
+    footer .realizadores .realizadores-galeria img {
+        max-height: 8vw;
+    }
+    
+    footer .realizadores p, footer .redes p{
+        font-size: 1rem;
+        font-family: 'Arboria Bold';
+        margin: 2px ;
+    }
+}

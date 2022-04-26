@@ -8,58 +8,78 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="reset.css">
+
 </head>
 <body>
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="itens-menu" id="itens-menu">
-            
-            <h2>Projetos</h2>
-            
-            <a href="#">Ballroom nas redes</a>
-            <a href="#">Carnaball</a>
-            <a href="#">Workshop mothers</a>
-            <a href="#">De férias na Ball</a>
-            <a href="#">Ball na Laje</a>
+            <div id="itens-menu-web">
+                <h2>Projetos</h2>        
+                <a href="./em-construcao.html">Ballroom nas redes</a>
+                <a href="./em-construcao.html">Carnaball</a>
+                <a href="./em-construcao.html">Workshop mothers</a>
+                <a href="./em-construcao.html">De férias na Ball</a>
+                <a href="./em-construcao.html">Ball na Laje</a>
+            </div>
+
+            <div id="itens-menu-mobile">
+                  <a href="./index.html">Home</a>
+                  <a href="./em-construcao.html">Ballroom nas redes</a>
+                  <a href="./em-construcao.html">Manifesto</a>
+                  <a href="./em-construcao.html">Quem Somos</a>
+                  <a href="./contato.html">Contato</a>
+                  
+              </div>
+
         </div>
         
         <img  class="logo-vertical" src="img/logo.png" alt="">
         
-      </div>
-<section class="header-box">
+    </div>
+      
     <header>
             <img  class="logo" src="img/logo.png" alt="">
         <nav class=" menu-horizontal">
             <a href="index.html">Home</a>
             <span>&bull;</span>
-            <a href="#">Ballroom nas Redes</a>
+            <a href="em-construcao.html">Ballroom nas Redes</a>
             <span>&bull;</span>
-            <a href="#">Manifesto</a>
+            <a href="em-construcao.html">Manifesto</a>
             <span>&bull;</span>
-            <a href="#">Quem Somos</a>
+            <a href="em-construcao.html">Quem Somos</a>
             <span>&bull;</span>
-            <a href="#">Contato</a> 
+            <a href="./contato.html">Contato</a> 
         </nav>
+        <div class="menu-vertical">
+           <a  onclick="openNav()"> <span style="font-size:30px;cursor:pointer;color:#f1f1f1">&#9776;</span></a>
+        </div>
     </header>
-    <div class="menu-vertical">
-        <span style="font-size:30px;cursor:pointer;color:#f1f1f1" onclick="openNav()">&#9776;</span>
-    </div>
-</section>
 
-<section class="banner">       
-     <article class="frase-banner" >
-        <p>
+<section class="banner">     
+    <div class="frase-banner-web">
+        <p class="frase-banner" >
+              
             Mutatis é ser. Viver. Agregar. Metamorfosear.
             Mexer. ir. Voltar. Respeitar. Crescer.
+             
         </p>
-     </article>
+    </div>  
+<!-- 
+        <div class="frase-banner-mobile">
+            <p class="frase-banner">Mutatis é ser.</p>
+            <p class="frase-banner">Viver. Agregar.</p>
+            <p class="frase-banner">Metamorfosear.</p>
+            <p class="frase-banner">Mexer. ir. Voltar.</p>
+            <p class="frase-banner">Respeitar. Crescer.</p>
+        </div> -->
 
-    <img class="foto-banner" src="img/banner.png" alt="">
+    <img class="foto-banner" src="img/desk_fundo.png" alt="">
     <img class="foto-banner-mobile" src="img/banner-mobile.png" alt="">
 </section>
 
 <section class="seta-chamada-programacao">
-       <a href="#programacao-texto-chamada"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+       <a href="#programacao-ballroom-nas-redes"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
        width="80" height="90"
        viewBox="0 0 172 172"
        style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#dc3c34"><path d="M85.6775,27.4125c-0.14781,0.02688 -0.29562,0.06719 -0.43,0.1075c-1.59906,0.36281 -2.72781,1.80063 -2.6875,3.44v101.5875l-31.605,-31.605c-0.645,-0.68531 -1.53187,-1.06156 -2.4725,-1.075c-1.3975,0.01344 -2.64719,0.86 -3.17125,2.16344c-0.51062,1.29 -0.20156,2.78156 0.80625,3.74906l37.41,37.5175l2.4725,2.365l2.4725,-2.365l37.41,-37.5175c1.02125,-0.83312 1.49156,-2.16344 1.19594,-3.45344c-0.29562,-1.27656 -1.30344,-2.28438 -2.58,-2.58c-1.29,-0.29563 -2.62031,0.17469 -3.45344,1.19594l-31.605,31.605v-101.5875c0.04031,-0.99437 -0.36281,-1.94844 -1.075,-2.62031c-0.72562,-0.68531 -1.70656,-1.02125 -2.6875,-0.92719z"></path></g></g></svg>
@@ -67,7 +87,7 @@
     </section>
 
     <main>
-        <article class="programacao-texto-chamada" id="programacao-texto-chamada">
+        <article class="programacao-texto-chamada" id="programacao-ballroom-nas-redes">
             <p>
                 Ballroom nas redes: corpos TLGBQIA+ conectados, já está a
                  todo vapor! Fiquem ligades na nossa programação e não
@@ -85,6 +105,7 @@
                 <aside>
                     <img src="img/15-marco.png" class="img-data-programacao">
                     <h3 class="titulo-resumo-programacao">Tudo tem sua história</h3>
+                    <a href="https://www.sympla.com.br/produtor/casademutatis" target="_blank"><button>Inscreva-se aqui</button></a> 
                     </aside>   
             </div>
             <div class="sinopse-programacao" >
@@ -95,26 +116,23 @@
                       a Cultura Ballroom construíu, passando pela sua criação, chegada
                       no Brasil e as contribuições da cena brasileira para a cultura.</p>
 
-                      <button> Inscreva-se aqui</button>
             </div>
         </div>
         <div class="container-programacao-reverse web">
             <div class="resumo-programacao">
-            <img src="img/22-marco.png" class="img-data-programacao">
-            <aside class="">
-                <h3 class="titulo-resumo">Discussões base da cena Ballroom</h3>
-                </br>      
-                    </aside>   
+                <aside class="">
+                <img src="img/22-marco.png" class="img-data-programacao">
+                <h3 class="titulo-resumo">Experiências de balls no Brasil I • Cena Mainstream</h3>
+                <a href="https://www.sympla.com.br/produtor/casademutatis" target="_blank"><button>Inscreva-se aqui</button></a>                    </aside>   
     </div>
 
                     <div class="sinopse-programacao" >
         
                         <p>A Ballroom é um espaço de acolhimento e questionamento, através das
-                             experiencias das pessoas inseridas na cultura, vamos falar sobre os
+                             experiencias das pessoas inseridas na cultura, vamos falar so e os
                               cruzamentos entre redes de apoio e comunidade, ligados a questões
                              de gênero, sexualidade, raça, acesso à saúde, trabalho e educação.</p>
         
-                              <button> Inscreva-se aqui</button>
                             </div>
                             <img class=" img-programacao" src="img/img-1-programacao.png" alt="">
         </div>
@@ -124,7 +142,7 @@
                 <aside>
                     <img src="img/22-marco.png" class="img-data-programacao">
                     <h3 class="titulo-resumo-programacao">Discussões base da cena Ballroom</h3>
-            </aside>   
+                    <a href="https://www.sympla.com.br/produtor/casademutatis" target="_blank"><button>Inscreva-se aqui</button></a>            </aside>   
             <img class=" img-programacao" src="img/img-1-programacao.png" alt="">
             </div>
             
@@ -132,11 +150,10 @@
                     <div class="sinopse-programacao" >
         
                         <p>A Ballroom é um espaço de acolhimento e questionamento, através das
-                             experiencias das pessoas inseridas na cultura, vamos falar sobre os
+                             experiencias das pessoas inseridas na cultura, vamos falar so e os
                               cruzamentos entre redes de apoio e comunidade, ligados a questões
                              de gênero, sexualidade, raça, acesso à saúde, trabalho e educação.</p>
         
-                              <button> Inscreva-se aqui</button>
                             </div>
         </div>
 
@@ -151,8 +168,7 @@
             <aside>
                 <img src="img/4-abril.png" class="img-data-programacao">
                 <h3 class="titulo-resumo-programacao">Qual é o lugar da Ballroom?</h3>
-                </br>      
-                </aside>   
+                <a href="https://www.sympla.com.br/produtor/casademutatis" target="_blank"><button>Inscreva-se aqui</button></a>                </aside>   
         </div>
         <div class="sinopse-programacao" >
 
@@ -161,7 +177,6 @@
                  discutindo qual relação é formada entre a cidade, periferia
                 e Cultura Ballroom.</p>
 
-                  <button> Inscreva-se aqui</button>
         </div>
     </div>       
      <div class="container-programacao-reverse web">
@@ -169,10 +184,7 @@
             <aside class="">
             <img src="img/19-abril.png" class="img-data-programacao">
             <h3 class="titulo-resumo">Discussões base da cena Ballroom</h3>
-
-
-            </br>      
-                </aside>   
+            <a href="https://www.sympla.com.br/produtor/casademutatis" target="_blank"><button>Inscreva-se aqui</button></a>                </aside>   
 </div>
 
                 <div class="sinopse-programacao" >
@@ -182,7 +194,6 @@
                          quais foram essas experiências em montar eventos grandes 
                         e quais as perpectivas da cena com a realização deles no Brasil.</p>
     
-                          <button> Inscreva-se aqui</button>
                         </div>
                         <img class=" img-programacao" src="img/img-1-programacao.png" alt="">
     </div>
@@ -193,6 +204,7 @@
             <aside>
                 <img src="img/15-marco.png" class="img-data-programacao">
                 <h3 class="titulo-resumo">Discussões base da cena Ballroom</h3>
+                <a href="https://www.sympla.com.br/produtor/casademutatis" target="_blank"><button>Inscreva-se aqui</button></a>
         </aside>   
         <img class=" img-programacao" src="img/img-1-programacao.png" alt="">
         </div>
@@ -205,7 +217,6 @@
                         quais foram essas experiências em montar eventos grandes 
                        e quais as perpectivas da cena com a realização deles no Brasil.</p>
     
-                          <button> Inscreva-se aqui</button>
                         </div>
     </div>
     <!--***********************MAIO************************-->
@@ -218,11 +229,8 @@
         <img class=" img-programacao" src="img/img-1-programacao.png" alt="">
         <aside>
             <img src="img/3-maio.png" class="img-data-programacao">
-            
- 
-
             <h3 class="titulo-resumo-programacao">Experiências de balls no Brasil II • Cena Kiki</h3>
-            </br>      
+            <a href="https://www.sympla.com.br/produtor/casademutatis" target="_blank"><button>Inscreva-se aqui</button></a>
             </aside>   
     </div>
     <div class="sinopse-programacao" >
@@ -233,7 +241,6 @@
             os sucessos e a identidade 
             brasileira dentro da cultura. O que torna a Cena Kiki brasileira tão única.</p>
 
-              <button> Inscreva-se aqui</button>
     </div>
 </div>       
  <div class="container-programacao-reverse web">
@@ -241,6 +248,7 @@
         <aside class="">
         <img src="img/17-maio.png" class="img-data-programacao">
         <h3 class="titulo-resumo">Então como é que acontece a organização de uma Ball?</h3>
+        <a href="https://www.sympla.com.br/produtor/casademutatis" target="_blank"><button>Inscreva-se aqui</button></a>
             </aside>   
     </div>
             <div class="sinopse-programacao" >
@@ -249,7 +257,6 @@
                     de organização. Esse encontro vai apresentar tudo que uma ball precisa 
                     para ser estruturada, quais elementos são importantes e 
                     como se adaptar as realidades de cada proposta de evento.</p>
-                      <button> Inscreva-se aqui</button>
                     </div>
                     <img class=" img-programacao" src="img/img-1-programacao.png" alt="">
 </div>
@@ -260,6 +267,7 @@
         <aside>
             <img src="img/17-maio.png" class="img-data-programacao">
             <h3 class="titulo-resumo">Então como é que acontece a organização de uma Ball?</h3>
+            <a href="https://www.sympla.com.br/produtor/casademutatis" target="_blank"><button>Inscreva-se aqui</button></a>
     </aside>   
     <img class=" img-programacao" src="img/img-1-programacao.png" alt="">
     </div>
@@ -273,7 +281,6 @@
                     para ser estruturada, quais elementos são importantes e 
                     como se adaptar as realidades de cada proposta de evento.</p>
 
-                      <button> Inscreva-se aqui</button>
                     </div>
 </div>
 
@@ -282,11 +289,8 @@
         <img class=" img-programacao" src="img/img-1-programacao.png" alt="">
         <aside>
             <img src="img/24-maio.png" class="img-data-programacao">
-            
- 
-            
-            
             <h3 class="titulo-resumo-programacao">Escrita de Projetos e Captação de Recursos</h3>
+            <a href="https://www.sympla.com.br/produtor/casademutatis" target="_blank"><button>Inscreva-se aqui</button></a>
             </aside>   
     </div>
     <div class="sinopse-programacao" >
@@ -296,7 +300,6 @@
             vai te ajudar a estruturar as ideias 
             e para apresentações de projetos e financiamento de Balls no Brasil.</p>
 
-              <button> Inscreva-se aqui</button>
     </div>
 </div>  
 
@@ -309,15 +312,13 @@
     <div class="resumo-programacao">
         <aside class="">
         <img src="img/7-junho.png" class="img-data-programacao">
-        
-
         <h3 class="titulo-resumo">Sem música não existe uma ball</h3>
+        <a href="https://www.sympla.com.br/produtor/casademutatis" target="_blank"><button>Inscreva-se aqui</button></a>
             </aside>   
     </div>
             <div class="sinopse-programacao" >
                 <p>DJ é uma das bases para a realização de uma ball, a função dá o tom das categorias e guia o chanter e us performers.
                      A oficina dividida em três encontros vai falar sobre história, musicalidade, produção musical, e construção do set para uma Ball. </p>
-                      <button> Inscreva-se aqui</button>
                     </div>
                     <img class=" img-programacao" src="img/img-1-programacao.png" alt="">
 </div>
@@ -328,6 +329,7 @@
         <aside>
             <img src="img/7-junho.png" class="img-data-programacao">
             <h3 class="titulo-resumo">Sem música não existe uma ball</h3>
+            <a href="https://www.sympla.com.br/produtor/casademutatis" target="_blank"><button>Inscreva-se aqui</button></a>
     </aside>   
     <img class=" img-programacao" src="img/img-1-programacao.png" alt="">
     </div>
@@ -340,7 +342,6 @@
                     A oficina dividida em três encontros vai falar sobre história,
                      musicalidade, produção musical, e construção do set para uma Ball. </p>
 
-                      <button> Inscreva-se aqui</button>
                     </div>
 </div>
 
@@ -350,28 +351,21 @@
         <img class=" img-programacao" src="img/img-1-programacao.png" alt="">
         <aside>
             <img src="img/14-junho.png" class="img-data-programacao">
-            
- 
-            
-            
             <h3 class="titulo-resumo">Experiências musicais na Ballroom</h3>
+            <a href="https://www.sympla.com.br/produtor/casademutatis" target="_blank"><button>Inscreva-se aqui</button></a>
             </aside>   
     </div>
     <div class="sinopse-programacao" >
-
         <p>DJs do Brasil se reúnem para contar sua experiências
              dentro da cena ballroom, compartilhar histórias. </p>
-
-              <button> Inscreva-se aqui</button>
     </div>
 </div>  
 <div class="container-programacao-reverse web">
     <div class="resumo-programacao">
         <aside class="">
         <img src="img/21-junho.png" class="img-data-programacao">
-        
-
         <h3 class="titulo-resumo">A categoria é Commentators!</h3>
+        <a href="https://www.sympla.com.br/produtor/casademutatis" target="_blank"><button>Inscreva-se aqui</button></a>
             </aside>   
     </div>
             <div class="sinopse-programacao" >
@@ -380,7 +374,6 @@
                      e performers. Para isso, essa oficina vai explicar quem é essa pessoa dentro
                       de uma Ball, como fazer para rimas, 
                     improvisar e potencializar a musicalidade e performances.</p>
-                      <button> Inscreva-se aqui</button>
                     </div>
                     <img class=" img-programacao" src="img/img-1-programacao.png" alt="">
 </div>
@@ -392,6 +385,7 @@
         <aside>
             <img src="img/7-junho.png" class="img-data-programacao">
             <h3 class="titulo-resumo">A categoria é Commentators!</h3>
+            <a href="https://www.sympla.com.br/produtor/casademutatis" target="_blank"><button>Inscreva-se aqui</button></a>
     </aside>   
     <img class=" img-programacao" src="img/img-1-programacao.png" alt="">
     </div>
@@ -405,7 +399,6 @@
                       de uma Ball, como fazer para rimas, 
                     improvisar e potencializar a musicalidade e performances.</p>
 
-                      <button> Inscreva-se aqui</button>
                     </div>
 </div>
 
@@ -414,11 +407,8 @@
         <img class=" img-programacao" src="img/img-1-programacao.png" alt="">
         <aside>
             <img src="img/28-junho.png" class="img-data-programacao">
-            
- 
-            
-            
             <h3 class="titulo-resumo">Cypher de Commentators</h3>
+            <a href="https://www.sympla.com.br/produtor/casademutatis" target="_blank"><button>Inscreva-se aqui</button></a>
             </aside>   
     </div>
     <div class="sinopse-programacao" >
@@ -427,7 +417,6 @@
              de São Paulo que estão produzindo suas próprias rimas para falar das suas vivências
               dentro e fora da cena e mandar um improviso com o mic na mão. </p>
 
-              <button> Inscreva-se aqui</button>
     </div>
 </div>  
     <!--***********************JULHO************************-->
@@ -439,37 +428,51 @@
         <div class="resumo-programacao">
             <aside class="">
             <img src="img/ball.png" class="img-data-programacao">
-            
-    
             <h3 class="titulo-resumo">A Revolução Será Periférica</h3>
-            </br>      
-                </aside>   
+            <a href="https://www.sympla.com.br/produtor/casademutatis" target="_blank"><button>Inscreva-se aqui</button></a>                </aside>   
         </div>
-                <div class="sinopse-programacao ball" >
-                    <p>Commentators é a pessoa responsável por comunicar durante as batalhas, 
+                <div class="sinopse-programacao " >
+                    <p class="ball">Commentators é a pessoa responsável por comunicar durante as batalhas, 
                         explicar o que está acontecendo, guiar as apresentações, levantar público
                          e performers. Para isso, essa oficina vai explicar quem é essa pessoa dentro
                           de uma Ball, como fazer para rimas, 
                         improvisar e potencializar a musicalidade e performances.</p>
-                          <button> Inscreva-se aqui</button>
                         </div>
                         <img class=" img-programacao" src="img/img-1-programacao.png" alt="">
     </div>
 
-
-        </section>
+    <div class="container-programacao-reverse mobile">
+            
+        <div class="resumo-programacao">
+            <aside>
+                <img src="img/ball.png" class="img-data-programacao">
+                <h3 class="titulo-resumo">A Revolução Será Periférica</h3>
+                <a href="https://www.sympla.com.br/produtor/casademutatis" target="_blank"><button>Inscreva-se aqui</button></a>        </aside>   
+        <img class=" img-programacao" src="img/img-1-programacao.png" alt="">
+        </div>
         
+    
+                <div class="sinopse-programacao" >
+    
+                    <p>Commentators é a pessoa responsável por comunicar durante 
+                        as batalhas, explicar o que está acontecendo, guiar as apresentações, 
+                        levantar público e performers. Para isso, essa oficina vai explicar 
+                        quem é essa pessoa dentro de uma Ball, como fazer para rimas, 
+                        improvisar e potencializar a musicalidade e performances.
+                        </div>
+    </div>
+    
+        </section>
     </main>
-
     <hr>
     <footer>
         <div class="redes">
             <p>Onde nos encontrar: </p>
             <div class="redes-galeria">
-                <img src="img/1-insta.png" alt="">
-                <img src="img/2-twitter.png" alt="">
-                <img src="img/3-ytb.png" alt="">
-                <img src="img/4-fb.png" alt="">
+                <a href="https://www.instagram.com/casademutatis/" target="_blank"><img src="img/1-insta.png" alt=""></a>
+                <a href="https://twitter.com/casademutatis" target="_blank"><img src="img/2-twitter.png" alt=""></a>
+                <a href="https://www.youtube.com/channel/UClIA9btcWP5XFCwWI_nljzw" target="_blank"><img src="img/3-ytb.png" alt=""></a>
+                <a href="https://www.facebook.com/houseofmutatis" target="_blank"><img src="img/4-fb.png" alt=""></a>
             </div>
         </div>
         <div class="realizadores">
@@ -482,12 +485,19 @@
             </div>
         </div>
     </footer>
-
     <script>
         function openNav() {
           document.getElementById("itens-menu").style.display = "block";
-           if(screen.width >= 900)
-           document.getElementById("mySidenav").style.width = "30%";
+          document.getElementById("itens-menu-web").style.display = "block";
+          document.getElementById("itens-menu-mobile").style.display = "none";
+          
+          if(screen.width >= 900)
+          document.getElementById("mySidenav").style.width = "30%";
+          else if(screen.width <= 640){
+              document.getElementById("mySidenav").style.width = "100%";
+              document.getElementById("itens-menu-web").style.display = "none";
+              document.getElementById("itens-menu-mobile").style.display = "block";
+          }
             else 
           document.getElementById("mySidenav").style.width = "100%";
         }

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casa de Mutatis</title>
+  <link rel="stylesheet" href="em-construcao.css">
+</head>
+<body>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="itens-menu" id="itens-menu">
+      <div id="itens-menu-web">
+          <h2>Projetos</h2>        
+          <a href="./em-construcao.html">Ballroom nas redes</a>
+          <a href="./em-construcao.html">Carnaball</a>
+          <a href="./em-construcao.html">Workshop mothers</a>
+          <a href="./em-construcao.html">De férias na Ball</a>
+          <a href="./em-construcao.html">Ball na Laje</a>
+      </div>
+
+      <div id="itens-menu-mobile">
+            <a href="./index.html">Home</a>
+            <a href="./em-construcao.html">Ballroom nas redes</a>
+            <a href="./em-construcao.html">Manifesto</a>
+            <a href="./em-construcao.html">Quem Somos</a>
+            <a href="./contato.html">Contato</a>
+            
+        </div>
+
+  </div>
+  
+    
+    <img  class="logo-vertical" src="img/logo.png" alt="">
+    
+  </div>
+<header>
+        <img  class="logo" src="img/logo.png" alt="">
+    <nav class=" menu-horizontal">
+        <a href="index.html">Home</a>
+        <span>&bull;</span>
+        <a href="em-construcao.html">Ballroom nas Redes</a>
+        <span>&bull;</span>
+        <a href="em-construcao.html">Manifesto</a>
+        <span>&bull;</span>
+        <a href="em-construcao.html">Quem Somos</a>
+        <span>&bull;</span>
+        <a href="./contato.html">Contato</a> 
+    </nav>
+    <div class="menu-vertical">
+        <span style="font-size:30px;cursor:pointer;color:#f1f1f1" onclick="openNav()">&#9776;</span>
+    </div>
+</header>
+<img class ="banner" src="./img/banner-mobile.png" alt="">
+<main>
+
+    <h3>Esta página está em construção.</h3>
+
+</main>
+<footer>
+  <div class="redes">
+      <p>Onde nos encontrar: </p>
+      <div class="redes-galeria">
+          <img src="img/1-insta.png" alt="">
+          <img src="img/2-twitter.png" alt="">
+          <img src="img/3-ytb.png" alt="">
+          <img src="img/4-fb.png" alt="">
+      </div>
+  </div>
+  <div class="realizadores">
+      <p>Realizadores: </p>
+
+      <div class="realizadores-galeria">
+          <img src="img/1-footer.png" alt="">
+          <img src="img/2-footer.png" alt="">
+          <img src="img/3-footer.png" alt="">
+      </div>
+  </div>
+</footer>
+<script>
+  function openNav() {
+    document.getElementById("itens-menu").style.display = "block";
+    document.getElementById("itens-menu-web").style.display = "block";
+    document.getElementById("itens-menu-mobile").style.display = "none";
+    
+    if(screen.width >= 900)
+    document.getElementById("mySidenav").style.width = "30%";
+    else if(screen.width <= 640){
+        document.getElementById("mySidenav").style.width = "100%";
+        document.getElementById("itens-menu-web").style.display = "none";
+        document.getElementById("itens-menu-mobile").style.display = "block";
+    }
+      else 
+    document.getElementById("mySidenav").style.width = "100%";
+  }
+  
+  function closeNav() {
+    document.getElementById("itens-menu").style.display = "none";
+    document.getElementById("mySidenav").style.width = "0";
+  }
+  </script>
+</body>
+</html>
