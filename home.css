@@ -44,7 +44,6 @@ h1.title-banner{
 }
 
 .pack-banner-01, .pack-banner-02, .pack-banner-03{
-    width: 100%;
     height: auto;
     display: flex;
     justify-content: center;

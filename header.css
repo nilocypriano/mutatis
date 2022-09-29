@@ -60,9 +60,10 @@ nav.menu-horizontal{
       color: #f1f1f1;
     }
 
-nav.menu-horizontal span{
+nav.menu-horizontal span.claro{
     color: #f1f1f1;
 }
+
     nav.menu-horizontal a:nth-child(3){
         color: #F9B233;
     }
