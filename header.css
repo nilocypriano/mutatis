@@ -1,18 +1,24 @@
 @font-face {
     font-family: 'Arboria-Bold';
     src:  url('Arboria-Bold.ttf') format('woff2')
-}
-
-@font-face {
+  }
+  
+  @font-face {
     font-family: 'Arboria-Thin';
     src:  url('Arboria-Book.woff2') format('woff2')
-}
+  }
 
-*, *:before, *:after {
+  @font-face {
+    font-family: 'Arboria-Medium';
+    src:  url('Arboria-Medium.ttf') format('woff2')
+  }
+  
+  *, *:before, *:after {
     box-sizing: border-box;
   }
-body{
-    margin: 0 auto;
+
+html {
+    scroll-behavior: smooth;
 }
 
 header{
@@ -21,12 +27,21 @@ header{
     font-family: 'Arboria-Bold';
     display: flex;
     flex-direction: row;
+    z-index: 1;
     justify-content: space-between;
     position: relative;
     background-color: white;
 }
 
+header#header-home, header#header-ballroom-nas-redes{
+    position: absolute;
+    background: none;
+}
+
+
+
 header img.logo{
+    margin-left: 2%;
     width: 70px;
 }
 
@@ -40,10 +55,14 @@ nav.menu-horizontal{
   
   nav.menu-horizontal a{
       font-size: 1.1rem;
-      font-family: 'Arboria Bold';
+      font-family: 'Arboria-Bold';
       text-decoration: none;
-      color: #0d0d0d;
+      color: #f1f1f1;
     }
+
+nav.menu-horizontal span{
+    color: #f1f1f1;
+}
     nav.menu-horizontal a:nth-child(3){
         color: #F9B233;
     }
@@ -69,7 +88,6 @@ nav.menu-horizontal{
     justify-content: flex-start;
     align-items: center;
 }
-
 .sidenav {
     font-family: "Arboria-Bold";
     height: 100%;
@@ -92,6 +110,11 @@ nav.menu-horizontal{
     width: 60%;
     margin: 20% auto;
 }
+
+.hide{
+    display: hide;
+}
+
 .sidenav h2{
     color: #0d0d0d;
     display: block;
@@ -100,6 +123,7 @@ nav.menu-horizontal{
 }
 .sidenav a {
     color: #0d0d0d;
+    
     padding: 15px 0 15px 0;
     text-decoration: none;
     font-size: 25px;
@@ -125,90 +149,38 @@ nav.menu-horizontal{
     bottom: 20px;
     right: 20px;
 }
-.banner{
-    display: none;
-}
-
-main{
-    width: 94%;
-    height: 48vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-h3{
-    color: #333333;
-    font-family: 'Arboria-Thin';
-}
-
-footer{
-    width: 94%;
-    padding: 1% 2%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    right: 6%;
-    bottom: 0;
-    left: 0;
-    box-shadow:  1px 0  2px 0 rgba(0,0,0,.2);
-    margin-top: 10%;
-
-}
-
-footer .redes-galeria, footer .realizadores-galeria{
-    display: flex;
-
-}
-
-footer .redes-galeria{
-    margin-top: 10%;
-    justify-content: space-between;
-    margin-left: 2%;
-
-}
-footer .realizadores-galeria{
-    justify-content: space-around;
-
-}
-footer .redes{
-    width: 15%;
-}
-footer .realizadores{
-    width: 40%;
-}
-footer .realizadores p, footer .redes p{
-    font-family: 'Arboria-Bold';
-    font-weight: 100;
-    font-size: 1.1rem;
-    color: #333333;
-    margin-top: 0;
-}
-
-footer .redes p{
-    margin-bottom: 20%;
-}
-footer .realizadores .realizadores-galeria{
-padding-left: 20%;
-}
-footer .realizadores .realizadores-galeria img{
-    max-height: 4vw;
-}
-footer .redes .redes-galeria img{
-    max-height: 1.6vw;
-}
 
 
-
-@media only screen and (max-width: 650px) {
-    nav a, nav span {
-        display: none;
+@media only screen and (max-width: 1041px) {
+    nav.menu-horizontal{
+        width: 58%;
     }
- 
+    nav.menu-horizontal a{
+        font-size: 1rem;
+    }
+
+
+  @media only screen and (max-width: 940px) {
+    header {
+        height: 60px;
+    }
+    .menu-vertical{
+        padding-top: 2.6%;
+    }
+      nav.menu-horizontal a{
+          font-size: 0.8rem;
+      }   }
+
+  @media only screen and (max-width: 650px) {
+      
+ nav a, nav span {
+     display: none;
+ }
     header img.logo{
         width: 50px;
-    margin-left: 2%;
         margin-bottom: 2px;
+    margin-left: 2%;
+
     }
     
     .menu-vertical{
@@ -224,42 +196,6 @@ footer .redes .redes-galeria img{
         position: fixed;
         top: 0;
         height: 45px;
-        padding: 1% 0 0 2%;
         box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
-    }
-
-    .banner{
-        display: block;
-        width:100% ;
-    }
-
-    footer{
-        width: 100%;
-        bottom: 0;
-        justify-content: space-between;
-        padding:1% 3%;
-        margin-top: 10%;
-    }
-    footer .redes {
-        width: 45%;
-        background-color: inherit;
-    }
-    
-    footer .realizadores .realizadores-galeria {
-        padding-left: 0;
-    }
-    
-    footer .redes .redes-galeria img {
-        max-height: 4vw;
-    }
-    
-    footer .realizadores .realizadores-galeria img {
-        max-height: 8vw;
-    }
-    
-    footer .realizadores p, footer .redes p{
-        font-size: 1rem;
-        font-family: 'Arboria-Bold';
-        margin: 2px ;
-    }
+    }}
 }
