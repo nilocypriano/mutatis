@@ -81,8 +81,6 @@ nav.menu-horizontal{
 .sidenav .itens-menu{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    /* height: 70%; */
     width: 60%;
     margin: 20% auto;
 }
@@ -137,5 +135,14 @@ nav.menu-horizontal{
         height: 45px;
         justify-content: center;
         align-items: center;
-    }   
+    }
+
+    #menu-projetos{
+        display: none;
+    }
+
+    .sidenav > .itens-menu {
+        line-height: 3.2rem;
+
+    }
 }
