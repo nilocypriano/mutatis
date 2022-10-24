@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'Arboria-Bold';
+    src:  url('./fontes/Arboria-Bold.ttf') format('woff2')
+  }
+
+  @font-face {
+    font-family: 'Arboria-Thin';
+    src:  url('./fontes/Arboria-Book.woff2') format('woff2')
+  }
+
+  @font-face {
+    font-family: 'Arboria-Medium';
+    src:  url('./fontes/Arboria-Medium.ttf') format('woff2')
+  }
+
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
+section.banner{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+
+img.img-versao-mobile{
+    display: none;
+}
+
+h1.title-banner{
+    position: absolute;
+    top: 46%;
+}
+
+.img-versao-web{
+    width: 100%;
+    max-width: 428px;
+}
+
+.pack-banner-01, .pack-banner-02, .pack-banner-03{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    color: #f1f1f1;
+    font-size: 4rem;
+    font-family: 'Arboria-Bold', 'Gill Sans', 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 1000px){
+    section.banner{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .img-versao-web{
+        display: none;
+    }
+
+    img.img-versao-mobile{
+        width: 100%;
+        max-width: 778px;
+        height: auto;
+        display: block;
+    }
+
+    h1.title-banner{
+        position: absolute;
+        top: unset;
+    }
+    .pack-banner-01,
+    .pack-banner-02,
+    .pack-banner-03{
+        align-items: center;
+    }
+}

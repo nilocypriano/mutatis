@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'Arboria-Bold';
+    src:  url('./fontes/Arboria-Bold.ttf') format('woff2')
+}
+
+@font-face {
+    font-family: 'Arboria-Thin';
+    src:  url('./fontes/Arboria-Book.woff2') format('woff2')
+}
+
+@font-face {
+    font-family: 'Arboria-Medium';
+    src:  url('./fontes/Arboria-Medium.ttf') format('woff2')
+  }
+
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
+main{
+    padding-left: 10%;
+    height:78vh;
+}
+
+h1, p{
+    color: #333333;
+    margin: 0;
+}
+p{
+
+    margin: 2% 0 2% 0;
+    font-family: 'Arboria-Thin';
+}
+h1{
+font-family: 'Arboria-Bold';
+font-size: 48px;
+}
+input{
+    width: 44%;
+    padding: 2% 1%;
+    box-sizing:border-box;
+    border-radius: 5px;
+    border: none;
+    background-color: #f1f1f1;
+    font-size: 1rem;
+}
+
+input:first-child{
+    margin-right: 1.5%;
+}
+
+input::placeholder, textarea::placeholder{
+    font-size: 1rem;
+    font-family: 'Arboria-Thin';
+}
+
+input:focus, textarea:focus{
+    outline: none !important;
+    border:1px solid #956004;
+  }
+textarea{
+    width: 90%;
+    height: 10%;
+    border: none;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    margin: 2% 0 4% 0;
+    padding: 2.5% 1%;
+    font-size: 1rem;
+}
+
+form{
+    width: 75%;
+}
+
+button{
+    color: #fff;
+    background-color: #333333;
+    padding: 1% 5%;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 650px) {
+    h1{
+        margin:18% 0 3% 0;
+        font-size: 44px
+    }
+
+    p{
+        width: 90%;
+    }
+
+    form{
+        margin-top: 6%;
+        width: 90%;
+    }
+
+    input{
+        width: 95%;
+        margin-bottom: 5%;
+    }
+
+
+    textarea{
+        width: 95%;
+    }
+
+    input, textarea{
+        padding: 6%  ;
+    }
+
+    button{
+        margin-top: 7%;
+        padding: 3% 5%;
+        font-size: 1rem;
+    }
+}

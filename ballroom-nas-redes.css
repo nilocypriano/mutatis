@@ -1,0 +1,224 @@
+@font-face {
+    font-family: 'Arboria-Bold';
+    src:  url('./fontes/Arboria-Bold.ttf') format('woff2')
+}
+
+@font-face {
+    font-family: 'Arboria-Thin';
+    src:  url('./fontes/Arboria-Book.woff2') format('woff2')
+}
+
+@font-face {
+    font-family: 'Arboria-Medium';
+    src:  url('./fontes/Arboria-Medium.ttf') format('woff2')
+  }
+
+@font-face {
+    font-family: 'Arboria-Book';
+    src:  url('./fontes/Arboria-Book.ttf') format('woff2')
+  }
+
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0 auto;
+}
+h2.titulo-nas-redes{
+    text-transform: uppercase;
+    font-family: 'Arboria-Bold', sans-serif;
+    text-align: center;
+    font-size: 32px;
+    color:  #DC3C34;
+    margin: 5% 0;
+}
+
+h1,h2, p{
+    color: #333333;
+    margin: 0;
+}
+
+h1, h2, h3{
+    font-family: 'Arboria-Bold', sans-serif;
+}
+
+section.banner{
+    width: 95%;
+    background-image: url('./img/banner-nas-redes.png');
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+section.seta-chamada-programacao{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin: 9% 0 0 0;
+}
+img.banner-web{
+width: 100%;
+margin: 0;
+max-width: 1350px;
+max-height: 100vh;
+}
+
+main{
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.episodio-container{
+    width: 86%;
+    margin: 0 auto;
+}
+
+.conteudo-sinopse-container, .conteudo-sinopse-container-reverse{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.img-sinopse{
+    width: 100%;
+    max-width: 586px;
+    height: auto;
+    max-height: 440px;
+}
+
+.img-reverse-web{
+    display: none;
+}
+
+iframe {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+  }
+article.texto-sinopse{
+    width: 40%;
+}
+
+h3.titulo-sinopse{
+    font-size:44px;
+    font-family: 'Arboria-Bold', sans-serif;
+    color: #956004;
+    margin:0 0 4%;
+}
+p.paragrafo-sinopse,p.paragrafo-sinopse-reverse{
+    color: #666666;;
+    font-family: 'Arboria-Book', sans-serif;
+    font-size: 24px;
+}
+
+p.paragrafo-sinopse{
+    padding-left: 4%;
+    border-left: 4px solid #333333;
+}
+
+p.paragrafo-sinopse-reverse{
+    padding-right: 4%;
+    border-right: 4px solid #333333;
+    text-align: right;
+}
+
+span.participantes-episodio{
+    font-family: 'Arboria-Book', sans-serif;
+    font-size: 24px;
+    display: inline-block;
+    padding: 5% 0 2%;
+    color: #4D4D4D;
+}
+
+hr#separador-conteudo{
+    margin: 3% 0;
+}
+
+hr{
+    margin: 0;
+}
+
+
+@media only screen and (max-width: 1280px) {
+    section.banner img.foto-banner{
+        width: 60%;
+        max-width: 830px;
+        position: absolute;
+        right: 6%;
+    }
+    footer .realizadores p, footer .redes p{
+        font-size: 1.3rem;
+    }
+}
+@media only screen and (max-width: 1041px) {
+    .conteudo-sinopse-container, .conteudo-sinopse-container-reverse{
+        flex-direction: column;
+    align-items:unset
+    }
+
+    h3.titulo-sinopse{
+        margin: 15% 0;
+        font-size: 24px;
+    }
+
+    article.texto-sinopse {
+        width: 100%;
+    }
+    p.paragrafo-sinopse-reverse{
+        text-align: left;
+    }
+    p.paragrafo-sinopse,
+    p.paragrafo-sinopse-reverse,
+    span.participantes-episodio{
+        font-size: 1rem;
+    }
+
+    span.participantes-episodio{
+        padding: 12% 0;
+    }
+
+
+    hr#separador-conteudo {
+        margin: 15% 0;
+    }
+
+    footer .realizadores p, footer .redes p{
+        font-size: 1.2rem;
+    }
+
+  }
+
+  @media only screen and (max-width: 940px) {
+      main h2.titulo-ballrom-nas-redes {
+        margin: 20% 0;
+    }
+    section.banner{
+        height: 64vh;
+        margin-bottom: 29%;
+    }
+    section.seta-chamada-programacao {
+        margin: 2% 0 15% 0;
+    }
+  }
+
+  @media only screen and (max-width: 650px) {
+
+
+    main{
+        width: 100%;
+        padding: 0 4%;
+        height: auto;
+
+    }
+
+}

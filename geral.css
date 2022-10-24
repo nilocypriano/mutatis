@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Arboria-Bold';
+    src:  url('./fontes/Arboria-Bold.ttf') format('ttf')
+}
+
+@font-face {
+    font-family: 'Arboria-Thin';
+    src:  url('./fontes/Arboria-Thin.woff2') format('ttf')
+}
+
+@font-face {
+    font-family: 'Arboria-Medium';
+    src:  url('./fontes/Arboria-Medium.ttf') format('ttf')
+}
+
+@font-face {
+    font-family: 'Arboria-Book';
+    src:  url('./fontes/Arboria-Book.ttf') format('ttf')
+}

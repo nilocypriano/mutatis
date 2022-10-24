@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'Arboria-Bold';
+    src:  url('./fontes/Arboria-Bold.ttf') format('woff2')
+  }
+
+  @font-face {
+    font-family: 'Arboria-Thin';
+    src:  url('./fontes/Arboria-Book.woff2') format('woff2')
+  }
+
+  @font-face {
+    font-family: 'Arboria-Medium';
+    src:  url('./fontes/Arboria-Medium.ttf') format('woff2')
+  }
+
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
+footer{
+    width: 94%;
+    /* padding: 1% 2%; */
+    display: flex;
+    flex-direction: row;
+    /* box-shadow:  1px 0  2px 0 rgba(0,0,0,.2); */
+    justify-content: space-between;
+    right: 6%;
+    bottom: -1;
+    left: 0;
+    background-color: #fff;
+    position: static;
+}
+
+footer .redes-galeria, footer .realizadores-galeria{
+    display: flex;
+
+}
+
+footer .redes-galeria{
+    margin-top: 10%;
+    justify-content: space-between;
+    margin-left: 2%;
+
+}
+footer .realizadores-galeria{
+    justify-content: space-around;
+
+}
+footer .redes{
+    width: 15%;
+}
+footer .realizadores{
+    width: 40%;
+}
+footer .realizadores p, footer .redes p{
+    font-family: 'Arboria-Bold';
+    font-weight: 100;
+    font-size: 1.1rem;
+    color: #333333;
+    margin-top: 0;
+}
+
+footer .redes p{
+    margin-bottom: 20%;
+}
+footer .realizadores .realizadores-galeria{
+padding-left: 20%;
+}
+footer .realizadores .realizadores-galeria img{
+    max-height: 4vw;
+}
+footer .redes .redes-galeria img{
+    max-height: 1.6vw;
+}
+
+@media only screen and (max-width: 650px) {
+    footer{
+        width: 100%;
+        bottom: 10px;
+        justify-content: space-between;
+        padding:0 3%;
+        margin-top: 10%;
+    }
+    footer .redes {
+        width: 45%;
+    }
+
+    footer .realizadores .realizadores-galeria {
+        padding-left: 0;
+    }
+
+    footer .redes .redes-galeria img {
+        max-height: 4vw;
+    }
+
+    footer .realizadores .realizadores-galeria img {
+        max-height: 8vw;
+    }
+
+    footer .realizadores p, footer .redes p{
+        font-size: 1rem;
+        font-family: 'Arboria-Bold';
+        margin: 2px ;
+    }
+}

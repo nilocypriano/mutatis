@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'Arboria-Bold';
+    src:  url('./fontes/Arboria-Bold.ttf') format('woff2')
+}
+
+@font-face {
+    font-family: 'Arboria-Thin';
+    src:  url('./fontes/Arboria-Book.woff2') format('woff2')
+}
+
+@font-face {
+    font-family: 'Arboria-Medium';
+    src:  url('./fontes/Arboria-Medium.ttf') format('woff2')
+  }
+
+@font-face {
+    font-family: 'Arboria-Book';
+    src:  url('./fontes/Arboria-Book.ttf') format('woff2')
+  }
+
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
+h2.titulo-familia{
+    text-transform: uppercase;
+    font-family: 'Arboria-Bold', sans-serif;
+    font-style: italic;
+    text-align: center;
+    font-size: 51px;
+}
+
+h1,h2, p{
+    color: #333333;
+}
+
+h1, h2, h3{
+    font-family: 'Arboria-Bold', sans-serif;
+}
+
+h1.titulo-quem-somos{
+    font-size: 56px;
+}
+
+section.container-quem-somos{
+    width: 70%;
+    margin: 3% 0 10% 10%;
+}
+
+p.paragrafo-quem-somos{
+    font-family: 'Arboria-Book', sans-serif;
+    font-size: 24px;
+    line-height: 2rem;
+}
+
+.vermelho-mutatis{
+    color: #DC3C34;}
+
+    .integrante-container{
+        width: 70%;
+
+
+        margin: 6% 0;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10%;
+    }
+
+       img.img-integrante,img.img-integrante-reverse{
+            width: 100%;
+            max-width: 770px;
+        }
+        h2.nome-integrante,h2.nome-integrante-reverse{
+            font-size: 84px;
+            text-transform: uppercase;
+            color:#F9B033;
+            font-weight: 900;
+            position: relative;
+            z-index: 1;
+        }
+
+        h2.nome-integrante-reverse{
+            right: 10%;
+        }
+        h2.nome-integrante{
+            left: 10%;
+        }
+
+hr{
+    margin: 0;
+}
+
+
+@media only screen and (max-width: 1280px) {
+
+    footer .realizadores p, footer .redes p{
+        font-size: 1.3rem;
+    }
+}
+@media only screen and (max-width: 1041px) {
+
+
+   img.img-integrante,img.img-integrante-reverse{
+        width: 70%;
+    }
+
+    h2.titulo-familia{
+        font-size: 20px;
+    }
+
+    h2.nome-integrante,h2.nome-integrante-reverse{
+        font-size: 20px;
+
+    }
+    section.container-quem-somos{
+        width: 75%;
+        margin: 20% auto;
+    }
+
+
+    h1.titulo-quem-somos{
+        margin-top: 30%;
+        font-size: 2rem;
+    }
+
+    p.paragrafo-quem-somos{
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+}

@@ -1,0 +1,184 @@
+@font-face {
+    font-family: 'Arboria-Bold';
+    src:  url('./fontes/Arboria-Bold.ttf') format('woff2')
+}
+
+@font-face {
+    font-family: 'Arboria-Thin';
+    src:  url('./fontes/Arboria-Book.woff2') format('woff2')
+}
+
+@font-face {
+    font-family: 'Arboria-Medium';
+    src:  url('./fontes/Arboria-Medium.ttf') format('woff2')
+  }
+
+@font-face {
+    font-family: 'Arboria-Book';
+    src:  url('./fontes/Arboria-Book.ttf') format('woff2')
+  }
+
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1,h2, p{
+    color: #333333;
+    margin: 0;
+}
+
+h1, h2, h3{
+    font-family: 'Arboria-Bold', sans-serif;
+}
+
+section.banner-container{
+    display: flex;
+    height: 80vh;
+    max-height: 452px;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    margin-right: 6%;
+}
+
+h1.titulo-manifesto{
+    position: relative;
+    margin: 11% 0  0 16%;
+    color:  #F9B233;
+    font-size: 78px;
+    text-transform: uppercase;
+    font-family: 'Arboria-Bold', sans-serif;
+}
+
+img.img-banner-manifesto, img.banner-mobile{
+    position: absolute;
+    z-index: -1;
+    right: 0;
+}
+
+img.banner-mobile{
+    display: none;
+}
+
+img.seta{
+    width: 3%;
+    display: block;
+    margin: 1% auto 5%;
+}
+
+main{
+    width: 70.7%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    position: relative;
+}
+
+.manifesto-border{
+    border: 6px solid #956004;
+    z-index: -2;
+    position: relative;
+    left: 3%;
+    border-radius: 1rem 1rem 1rem 0;
+}
+.manifesto-texto,.manifesto-border{
+    text-align: center;
+    width: 100%;
+    padding: 10%;
+    height: auto;
+    position: relative;
+}
+.manifesto-texto{
+    border-radius: 1rem 0 1rem 1rem;
+    margin-top: 6%;
+    right: 3%;
+    border: 6px solid #F9B033;
+    z-index: -1;
+    position: absolute;
+}
+
+div.manifesto-paragrafo-hidden {
+    visibility: hidden;
+}
+
+p.manifesto-paragrafo, p.manifesto-paragrafo-hidden {
+    font-size: 28.5px;
+    color: #DC3C34;
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: 'Arboria-Bold';
+}
+
+.vermelho-mutatis{
+    color: #DC3C34;
+}
+
+hr{
+    margin: 0;
+    position: sticky;
+    z-index: -1;
+    margin-top: 20vh;
+
+}
+
+
+@media only screen and (max-width: 1280px) {
+    section.banner img.foto-banner{
+        width: 60%;
+        max-width: 830px;
+        position: absolute;
+        right: 6%;
+    }
+    footer .realizadores p, footer .redes p{
+        font-size: 1.3rem;
+    }
+}
+@media only screen and (max-width: 1041px) {
+    h1.titulo-manifesto{
+        font-size: 44px;
+        top: 70%;
+        margin-left: 15%;
+    }
+
+
+    img.img-banner-manifesto{
+        display: none;
+    }
+
+
+    img.banner-mobile{
+        width: 100%;
+        max-width: 277px;
+        display: block;
+    }
+    img.seta{
+        width: 7%;
+        margin: 16% auto 35%;
+    }
+    main{
+        width: 65%;
+    }
+    .manifesto-texto,.manifesto-border{
+        width: 90%;
+        padding: 10%;
+    }
+    .manifesto-border{
+        border: 2px solid #956004;
+        left: 15%;
+    }
+
+    .manifesto-texto{
+        border: 2px solid #F9B033;
+    }
+
+    p.manifesto-paragrafo, p.manifesto-paragrafo-hidden {
+        font-size: 12px;
+        line-height: 23.5px;
+    }
+
+  }
